@@ -1,10 +1,7 @@
 package com.github.calculator
 
 
-import scala.io.StdIn.{readLine,readf}
-
-
-
+import scala.io.StdIn.readLine
 
 
 object calculatorTest {
@@ -59,22 +56,14 @@ object calculatorTest {
     }
 
 
-
-
-
-
-
     val nextStep = readLine().replaceAll(" +","")
-    println(nextStep)
     val delimit = "([\\+\\/\\-\\*]+)"
-    //val pattern = "([\\+\\/\\-\\*]+)".r
     val op = removeDigit(nextStep)
-    println(op)
-    val Args = nextStep.split(delimit).map(_.toInt).toList
 
+    val Args = nextStep.split(delimit).map(_.toInt).toList
     println(Args(0),Args(1))
 
-    def perform(any: Any):Unit = op match{
+    def perform(c: Char): Unit = op match{
       case '+' => evalAdd(Args.head,Args(1))
       case '-' => evalSub(Args.head,Args(1))
       case '*' => evalMultiple(Args.head,Args(1))
@@ -86,9 +75,6 @@ object calculatorTest {
     println("Exiting the calculator App !!")
 
     System.exit(0)
-
-
-
 
   }
 
