@@ -53,17 +53,22 @@ object calculatorTest {
       c
     }
 
+    def removeDigit(s: String): Char ={
+      //def isDigit(c: Char): Boolean = true
+      s.filter(c => !c.isDigit).head
+    }
 
-   /* def onlyNum(a: Vector[Any]) = a match {
-                case i: Int => true
-                case _ => false
-              }*/
+
+
+
+
+
 
     val nextStep = readLine().replaceAll(" +","")
     println(nextStep)
     val delimit = "([\\+\\/\\-\\*]+)"
     //val pattern = "([\\+\\/\\-\\*]+)".r
-    val op = '+'
+    val op = removeDigit(nextStep)
     println(op)
     val Args = nextStep.split(delimit).map(_.toInt).toList
 
