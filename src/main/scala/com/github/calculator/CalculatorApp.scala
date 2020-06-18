@@ -4,7 +4,7 @@ package com.github.calculator
 import scala.io.StdIn.readLine
 
 
-object calculatorTest {
+object CalculatorApp {
 
   def main(args: Array[String]): Unit = {
 
