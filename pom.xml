@@ -18,8 +18,8 @@
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_2.11</artifactId>
-            <version>2.2.4</version>
+            <artifactId>scalatest_2.13</artifactId>
+            <version>3.0.8</version>
         </dependency>
     </dependencies>
     <build>
@@ -30,10 +30,6 @@
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
                 <version>4.4.0</version>
-                <configuration>
-                    <mainClass>App</mainClass>
-                    <scalaCompatVersion>2.11</scalaCompatVersion>
-                </configuration>
                 <executions>
                     <execution>
                         <phase>compile</phase>
