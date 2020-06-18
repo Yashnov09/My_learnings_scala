@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e45b2d86-bb35-48cf-857d-75b4c888d364" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/calculator/calculatorTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +13,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ScalaTest Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,10 +36,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest" value="org.scalatest.FunSuite" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.github.calculator" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.scalatest.FunSuite" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.CalculatorApp">
     <configuration name="CalculatorApp" type="Application" factoryName="Application" temporary="true">
@@ -46,23 +65,120 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="calculatorTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.calculator.calculatorTest" />
+    <configuration name="CalculatorAppTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="My_learnings_scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorAppTest.Division by 2 numbers works fine" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="My_learnings_scala" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="testName" value="Division by 2 numbers works fine" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorAppTest.Division by zero should fail" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="My_learnings_scala" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="testName" value="Division by zero should fail" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorAppTest.Division should return floating point" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="My_learnings_scala" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="testName" value="Division should return floating point" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CalculatorApp" />
-        <item itemvalue="Application.calculatorTest" />
+        <item itemvalue="ScalaTest.CalculatorAppTest.Division should return floating point" />
+        <item itemvalue="ScalaTest.CalculatorAppTest.Division by zero should fail" />
+        <item itemvalue="ScalaTest.CalculatorAppTest.Division by 2 numbers works fine" />
+        <item itemvalue="ScalaTest.CalculatorAppTest" />
       </list>
     </recent_temporary>
   </component>
@@ -88,25 +204,25 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="613" y="237" key="Github.UntrackedFilesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590048893189" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1590331455779">
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom" timestamp="1592491392523">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590331455779" />
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1592491392523" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405524" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1590331455776">
+    <state width="1638" height="331" key="GridCell.Tab.0.center" timestamp="1592491392520">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590331455776" />
+    <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1592491392520" />
     <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405522" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1590331455774">
+    <state width="1638" height="331" key="GridCell.Tab.0.left" timestamp="1592491392519">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590331455774" />
+    <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1592491392519" />
     <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405521" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1590331455777">
+    <state width="1638" height="331" key="GridCell.Tab.0.right" timestamp="1592491392522">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590331455777" />
+    <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592491392522" />
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405523" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1590331209568">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -140,6 +256,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="606" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590069863653" />
+    <state x="617" y="338" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1592489540020">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="617" y="338" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/0.0.1680.1050@0.0.1680.1050" timestamp="1592489540020" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1589897303581">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
