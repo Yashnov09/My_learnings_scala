@@ -5,11 +5,18 @@ import org.scalatest.{FunSuite, Matchers}
 
 class CalculatorAppTest extends FunSuite with Matchers {
 
- test ("Adding 2 numbers gives correct result"){
+ test ("Add method gives correct result"){
    CalculatorApp.evalAdd(10,5) shouldBe 15
  }
 
- test("Division by 2 numbers works fine"){
+  test("Sub method gives correct result"){
+    CalculatorApp.evalSub(20,4) shouldBe 16
+  }
+
+  test("Multiple method gives correct result"){
+    CalculatorApp.evalMultiple(3,6) shouldBe 18
+  }
+ test("Division method gives correct results"){
    CalculatorApp.evalDivide(10,2) shouldBe 5
  }
 

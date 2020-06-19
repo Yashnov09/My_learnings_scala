@@ -11,6 +11,18 @@ object CalculatorApp {
     c
   }
 
+  def evalSub(a: Int, b: Int): Int =
+  { val c = a - b
+    println(s"Result is $c")
+    c
+  }
+
+  def evalMultiple(a: Int, b: Int): Int =
+  { val c = a * b
+    println(s"Result is $c")
+    c
+  }
+
 
   def evalDivide(a: Int, b: Int): Float = {
     require(b != 0,"Denominator cannot be 0")
@@ -18,9 +30,6 @@ object CalculatorApp {
     println("Result is "+c)
     c
   }
-
-
-
 
 
 
@@ -42,17 +51,9 @@ object CalculatorApp {
 
 
 
-    def evalSub(a: Int, b: Int): Int =
-      { val c = a - b
-        println(s"Result is $c")
-        c
-      }
 
-    def evalMultiple(a: Int, b: Int): Int =
-    { val c = a * b
-      println(s"Result is $c")
-      c
-    }
+
+
 
 
 
