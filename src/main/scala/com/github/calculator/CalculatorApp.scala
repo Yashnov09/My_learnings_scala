@@ -31,58 +31,55 @@ object CalculatorApp {
     c
   }
 
+  /*Method to remove special char*/
+  def removeDigit(s: String): Char ={
+    s.filter(c => !c.isDigit).head
+  }
+
+
+  def getChoice: String = {
+
+    val help = """Please enter the operation to perform
+                 |For Eg: 3+6""".stripMargin
+    val line = readLine().toLowerCase()
+    line match {
+      case "help" => println(help);line
+      case _ => println("Invalid input, please type help !!"); getChoice
+    }
+  }
+
+
 
 
   def main(args: Array[String]): Unit = {
-
-
-    println("Welcome to calculator! Type help")
-    val help = """Please enter the operation to preform
-                 |For Eg: 3+6""".stripMargin
-
-    def getChoice: String = {
-      val line = readLine().toLowerCase()
-      line match {
-        case "help" => println(help);line
-        case _ => println("Invalid input, please type help !!"); getChoice
-      }
-    }
+    println("************* Welcome to calculator! Type help *************")
     getChoice
-
-
-
-
-
-
-
-
-
-
-    def removeDigit(s: String): Char ={
-      //def isDigit(c: Char): Boolean = true
-      s.filter(c => !c.isDigit).head
+    def operand: (Char, Int, Int) = {
+      val nextStep = readLine().replaceAll(" +", "")
+      val sym = removeDigit(nextStep)
+      val delimit = "([\\+\\/\\-\\*]+)"
+      val Args = nextStep.split(delimit).map(_.toInt).toList
+      (sym,Args.head,Args(1))
     }
+    val (op, arg1, arg2) = operand
 
-
-    val nextStep = readLine().replaceAll(" +","")
-    val delimit = "([\\+\\/\\-\\*]+)"
-    val op = removeDigit(nextStep)
-
-    val Args = nextStep.split(delimit).map(_.toInt).toList
-    println(Args(0),Args(1))
-
-    def perform(c: Char): Unit = op match{
-      case '+' => evalAdd(Args.head,Args(1))
-      case '-' => evalSub(Args.head,Args(1))
-      case '*' => evalMultiple(Args.head,Args(1))
-      case '/' => evalDivide(Args.head,Args(1))
+    def perform: Unit = op match{
+      case '+' => evalAdd(arg1,arg2)
+      case '-' => evalSub(arg1,arg2)
+      case '*' => evalMultiple(arg1,arg2)
+      case '/' => evalDivide(arg1,arg2)
       case _ => System.exit(0)
     }
-    perform(op)
+    perform
+    println("Do you want to continue with Calculator: Y or N")
+    val input = readLine().toUpperCase()
+    def Continue(c: String): Unit = input match {
+      case "Y" => println("Enter the operation");operand;perform
+      case "N" => println("Exiting the calculator App !!"); System.exit(0)
+    }
+    Continue(input)
 
-    println("Exiting the calculator App !!")
 
-    System.exit(0)
 
   }
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e45b2d86-bb35-48cf-857d-75b4c888d364" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" afterDir="false" />
     </list>
@@ -50,7 +51,7 @@
       <recent name="org.scalatest.FunSuite" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.CalculatorAppTest.Multiple method gives correct result">
+  <component name="RunManager" selected="Application.CalculatorApp">
     <configuration name="CalculatorApp" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.github.calculator.CalculatorApp" />
       <module name="My_learnings_scala" />
@@ -62,28 +63,6 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorAppTest.Division by zero should fail" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="My_learnings_scala" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
-      <option name="envs">
-        <map />
-      </option>
-      <option name="javaOptions" value="" />
-      <option name="jrePath" />
-      <option name="searchTest" value="Across module dependencies" />
-      <option name="showProgressMessages" value="true" />
-      <option name="testArgs" value="" />
-      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
-      <option name="testName" value="Division by zero should fail" />
-      <option name="useSbt" value="false" />
-      <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="CalculatorAppTest.Division should return floating point" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -122,6 +101,28 @@
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
       <option name="testName" value="Multiple method gives correct result" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorAppTest.Remove operand gives correct result" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="My_learnings_scala" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="testName" value="Remove operand gives correct result" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -174,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculatorApp" />
+        <item itemvalue="ScalaTest.CalculatorAppTest.Remove operand gives correct result" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Multiple method gives correct result" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Sub method gives correct result" />
-        <item itemvalue="Application.CalculatorApp" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Division should return floating point" />
-        <item itemvalue="ScalaTest.CalculatorAppTest.Division by zero should fail" />
       </list>
     </recent_temporary>
   </component>
@@ -204,26 +205,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="613" y="237" key="Github.UntrackedFilesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590048893189" />
-    <state width="1638" height="331" key="GridCell.Tab.0.bottom" timestamp="1592491791636">
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom" timestamp="1592762432115">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1592491791636" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405524" />
-    <state width="1638" height="331" key="GridCell.Tab.0.center" timestamp="1592491791632">
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432115" />
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194582" />
+    <state width="1638" height="331" key="GridCell.Tab.0.center" timestamp="1592762432112">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1592491791632" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405522" />
-    <state width="1638" height="331" key="GridCell.Tab.0.left" timestamp="1592491791631">
+    <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432112" />
+    <state width="1638" height="331" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194580" />
+    <state width="1638" height="331" key="GridCell.Tab.0.left" timestamp="1592762432110">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1592491791631" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405521" />
-    <state width="1638" height="331" key="GridCell.Tab.0.right" timestamp="1592491791634">
+    <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432110" />
+    <state width="1638" height="331" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194579" />
+    <state width="1638" height="331" key="GridCell.Tab.0.right" timestamp="1592762432114">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592491791634" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1590041405523" />
+    <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432114" />
+    <state width="1638" height="331" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194581" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1590331209568">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

@@ -30,6 +30,11 @@ class CalculatorAppTest extends FunSuite with Matchers {
    CalculatorApp.evalDivide(10,3) shouldBe 10/3.0f
  }
 
+  test("Remove operand gives correct result"){
+    val s = "20+30"
+    val result = '+'
+    CalculatorApp.removeDigit(s) shouldBe result
+  }
 
 
 
