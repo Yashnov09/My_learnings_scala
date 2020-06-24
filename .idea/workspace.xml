@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e45b2d86-bb35-48cf-857d-75b4c888d364" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <recent name="org.scalatest.FunSuite" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculatorApp">
+  <component name="RunManager" selected="ScalaTest.CalculatorAppTest.Division should return floating point">
     <configuration name="CalculatorApp" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.github.calculator.CalculatorApp" />
       <module name="My_learnings_scala" />
@@ -78,7 +78,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
-      <option name="testName" value="Division should return floating point" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -100,7 +99,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
-      <option name="testName" value="Multiple method gives correct result" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -122,7 +120,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
-      <option name="testName" value="Remove operand gives correct result" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -144,7 +141,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
-      <option name="testName" value="Sub method gives correct result" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -175,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.CalculatorAppTest.Division should return floating point" />
         <item itemvalue="Application.CalculatorApp" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Remove operand gives correct result" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Multiple method gives correct result" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Sub method gives correct result" />
-        <item itemvalue="ScalaTest.CalculatorAppTest.Division should return floating point" />
       </list>
     </recent_temporary>
   </component>
@@ -205,25 +201,25 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="613" y="237" key="Github.UntrackedFilesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590048893189" />
-    <state width="1638" height="331" key="GridCell.Tab.0.bottom" timestamp="1592762432115">
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom" timestamp="1593010052459">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432115" />
+    <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1593010052459" />
     <state width="1638" height="331" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194582" />
-    <state width="1638" height="331" key="GridCell.Tab.0.center" timestamp="1592762432112">
+    <state width="1638" height="331" key="GridCell.Tab.0.center" timestamp="1593010052457">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432112" />
+    <state width="1638" height="331" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1593010052457" />
     <state width="1638" height="331" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194580" />
-    <state width="1638" height="331" key="GridCell.Tab.0.left" timestamp="1592762432110">
+    <state width="1638" height="331" key="GridCell.Tab.0.left" timestamp="1593010052455">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432110" />
+    <state width="1638" height="331" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1593010052455" />
     <state width="1638" height="331" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194579" />
-    <state width="1638" height="331" key="GridCell.Tab.0.right" timestamp="1592762432114">
+    <state width="1638" height="331" key="GridCell.Tab.0.right" timestamp="1593010052458">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592762432114" />
+    <state width="1638" height="331" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1593010052458" />
     <state width="1638" height="331" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1592760194581" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1590331209568">
       <screen x="0" y="0" width="1680" height="1050" />
