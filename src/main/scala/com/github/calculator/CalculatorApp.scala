@@ -5,34 +5,36 @@ object CalculatorApp {
 
   /* Methods to perform various operations */
 
-  def evalAdd(a: Int, b: Int): Int = {
+  def evalAdd(a: Double, b: Double): Double = {
     val c = a + b
     println(s"Result is $c")
     c
   }
 
-  def evalSub(a: Int, b: Int): Int = {
+  def evalSub(a: Double, b: Double): Double = {
     val c = a - b
     println(s"Result is $c")
     c
   }
 
-  def evalMultiple(a: Int, b: Int): Int = {
+  def evalMultiple(a: Double, b: Double): Double = {
     val c = a * b
     println(s"Result is $c")
     c
   }
 
-  def evalDivide(a: Int, b: Int): Float = {
+  def evalDivide(a: Double, b: Double): Float = {
     require(b != 0, "Denominator cannot be 0")
     val c = a / b.toFloat
     println("Result is " + c)
-    c
+    c.toFloat
   }
 
-  /*Method to remove special char*/
+  /*Method to remove Digits/char*/
   def removeDigit(s: String): Char = {
-    s.filter(c => !c.isDigit).head
+    if (s.contains('.')) {
+      s.filter(c => (!c.isDigit && c != '.')).head
+    } else s.filter(c => !c.isDigit).head
   }
 
   def getChoice: Unit = {
@@ -58,15 +60,15 @@ object CalculatorApp {
 
   }
 
-  def operand(line: String): (Char, Int, Int) = {
+  def operand(line: String): (Char, Double, Double) = {
     val nextStep = line.replaceAll(" +", "")
     val sym = removeDigit(nextStep)
     val delimit = "([\\+\\/\\-\\*]+)"
-    val Args = nextStep.split(delimit).map(_.toInt).toList
+    val Args = nextStep.split(delimit).map(_.toDouble).toList
     (sym, Args.head, Args(1))
   }
 
-  def perform(op: Char, arg1: Int, arg2: Int): Unit = op match {
+  def perform(op: Char, arg1: Double, arg2: Double): Unit = op match {
     case '+' => evalAdd(arg1, arg2)
     case '-' => evalSub(arg1, arg2)
     case '*' => evalMultiple(arg1, arg2)
