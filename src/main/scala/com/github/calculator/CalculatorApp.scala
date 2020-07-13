@@ -23,11 +23,11 @@ object CalculatorApp {
     c
   }
 
-  def evalDivide(a: Double, b: Double): Float = {
+  def evalDivide(a: Double, b: Double): Double = {
     require(b != 0, "Denominator cannot be 0")
-    val c = a / b.toFloat
+    val c = a / b
     println("Result is " + c)
-    c.toFloat
+    c
   }
 
   /*Method to remove Digits/char*/

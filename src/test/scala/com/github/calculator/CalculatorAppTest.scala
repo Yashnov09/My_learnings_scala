@@ -28,14 +28,18 @@ class CalculatorAppTest extends FunSuite with Matchers {
     import org.scalactic.TolerantNumerics
     implicit val floatEq: Equality[Float] =
       TolerantNumerics.tolerantFloatEquality(0.01f)
-    CalculatorApp.evalDivide(10, 3) shouldBe 10 / 3.0f
+    CalculatorApp.evalDivide(10, 3) shouldBe 10 / 3.0
   }
 
-  /*test("Remove operand gives correct result"){
-    val s = "20+30"
-    val result = '+'
+  test("Remove operand gives correct result") {
+    val s: String = "20+30"
+    val result: Char = '+'
     CalculatorApp.removeDigit(s) shouldBe result
   }
- */
+
+  test("Operand function gives correct results ") {
+    val result: (Char, Double, Double) = ('+', 20.0, 10.0)
+    CalculatorApp.operand("20.0+10.0") shouldBe result
+  }
 
 }

@@ -4,6 +4,7 @@
     <list default="true" id="e45b2d86-bb35-48cf-857d-75b4c888d364" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <recent name="org.scalatest.FunSuite" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculatorApp">
+  <component name="RunManager" selected="ScalaTest.CalculatorAppTest.Division should return floating point">
     <configuration name="CalculatorApp" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.github.calculator.CalculatorApp" />
       <module name="My_learnings_scala" />
@@ -74,10 +75,10 @@
       <option name="javaOptions" value="" />
       <option name="jrePath" />
       <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
-      <option name="testName" value="Division should return floating point" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -96,6 +97,7 @@
       <option name="javaOptions" value="" />
       <option name="jrePath" />
       <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
@@ -107,19 +109,21 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorAppTest.Multiple method gives correct result" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="CalculatorAppTest.Remove operand gives correct result (1)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="My_learnings_scala" />
       <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
+      <option name="testKind" value="Test name" />
       <option name="envs">
         <map />
       </option>
       <option name="javaOptions" value="" />
       <option name="jrePath" />
       <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="testName" value="Remove operand gives correct result" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -138,6 +142,7 @@
       <option name="javaOptions" value="" />
       <option name="jrePath" />
       <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
@@ -158,6 +163,7 @@
       <option name="javaOptions" value="" />
       <option name="jrePath" />
       <option name="searchTest" value="Across module dependencies" />
+      <option name="shortenClasspath" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="" />
@@ -171,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CalculatorApp" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Division should return floating point" />
+        <item itemvalue="ScalaTest.CalculatorAppTest.Remove operand gives correct result (1)" />
+        <item itemvalue="Application.CalculatorApp" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Division should return floating point (1)" />
         <item itemvalue="ScalaTest.CalculatorAppTest.Remove operand gives correct result" />
-        <item itemvalue="ScalaTest.CalculatorAppTest.Multiple method gives correct result" />
       </list>
     </recent_temporary>
   </component>
@@ -201,26 +207,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="613" y="237" key="Github.UntrackedFilesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590048893189" />
-    <state width="1638" height="441" key="GridCell.Tab.0.bottom" timestamp="1594577940235">
+    <state width="1638" height="441" key="GridCell.Tab.0.bottom" timestamp="1594662163984">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="441" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594577940235" />
-    <state width="1638" height="490" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1593106192911" />
-    <state width="1638" height="441" key="GridCell.Tab.0.center" timestamp="1594577940232">
+    <state width="1638" height="441" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594662163984" />
+    <state width="1638" height="441" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113660" />
+    <state width="1638" height="441" key="GridCell.Tab.0.center" timestamp="1594662163981">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="441" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594577940232" />
-    <state width="1638" height="490" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1593106192909" />
-    <state width="1638" height="441" key="GridCell.Tab.0.left" timestamp="1594577940231">
+    <state width="1638" height="441" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594662163981" />
+    <state width="1638" height="441" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113656" />
+    <state width="1638" height="441" key="GridCell.Tab.0.left" timestamp="1594662163979">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="441" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594577940231" />
-    <state width="1638" height="490" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1593106192906" />
-    <state width="1638" height="441" key="GridCell.Tab.0.right" timestamp="1594577940234">
+    <state width="1638" height="441" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594662163979" />
+    <state width="1638" height="441" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113651" />
+    <state width="1638" height="441" key="GridCell.Tab.0.right" timestamp="1594662163983">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="441" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594577940234" />
-    <state width="1638" height="490" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1593106192910" />
+    <state width="1638" height="441" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594662163983" />
+    <state width="1638" height="441" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113658" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1590331209568">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
