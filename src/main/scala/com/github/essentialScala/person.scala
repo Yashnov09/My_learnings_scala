@@ -6,5 +6,10 @@ object person {
 }
 
 object alien {
-  def greet(p: person.type) = "Greetings, " + p.firstName + " " + p.lastName
+  def greet(p: person.type) =
+    println("Greetings, " + p.firstName + " " + p.lastName)
+
+  def main(args: Array[String]): Unit = {
+    alien.greet(person)
+  }
 }

@@ -2,33 +2,36 @@ package com.github.calculator
 
 import org.scalactic.Equality
 import org.scalatest.{FunSuite, Matchers}
-
+import com.github.calculator.domain.Calculator
+import com.github.calculator.console.LiveConsole
 class CalculatorAppTest extends FunSuite with Matchers {
+  val con = new LiveConsole()
+  val cal = new Calculator(con)
 
   test("Add method gives correct result") {
-    CalculatorApp.evalAdd(10, 5) shouldBe 15
+    cal.evalAdd(10, 5) shouldBe 15
   }
 
   test("Sub method gives correct result") {
-    CalculatorApp.evalSub(20, 4) shouldBe 16
+    cal.evalSub(20, 4) shouldBe 16
   }
 
   test("Multiple method gives correct result") {
-    CalculatorApp.evalMultiple(3, 6) shouldBe 18
+    cal.evalMultiple(3, 6) shouldBe 18
   }
   test("Division method gives correct results") {
-    CalculatorApp.evalDivide(10, 2) shouldBe 5
+    cal.evalDivide(10, 2) shouldBe 5
   }
 
   test("Division by zero should fail") {
-    assertThrows[IllegalArgumentException](CalculatorApp.evalDivide(9, 0))
+    assertThrows[IllegalArgumentException](cal.evalDivide(9, 0))
   }
 
   test("Division should return floating point") {
     import org.scalactic.TolerantNumerics
     implicit val floatEq: Equality[Float] =
       TolerantNumerics.tolerantFloatEquality(0.01f)
-    CalculatorApp.evalDivide(10, 3) shouldBe 10 / 3.0
+    cal.evalDivide(10, 3) shouldBe 10 / 3.0
   }
 
   test("Remove operand gives correct result") {

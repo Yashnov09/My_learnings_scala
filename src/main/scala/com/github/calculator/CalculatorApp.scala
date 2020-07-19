@@ -1,34 +1,9 @@
 package com.github.calculator
 import scala.io.StdIn.readLine
+import com.github.calculator.domain.Calculator
+import com.github.calculator.console.LiveConsole
 
 object CalculatorApp {
-
-  /* Methods to perform various operations */
-
-  def evalAdd(a: Double, b: Double): Double = {
-    val c = a + b
-    println(s"Result is $c")
-    c
-  }
-
-  def evalSub(a: Double, b: Double): Double = {
-    val c = a - b
-    println(s"Result is $c")
-    c
-  }
-
-  def evalMultiple(a: Double, b: Double): Double = {
-    val c = a * b
-    println(s"Result is $c")
-    c
-  }
-
-  def evalDivide(a: Double, b: Double): Double = {
-    require(b != 0, "Denominator cannot be 0")
-    val c = a / b
-    println("Result is " + c)
-    c
-  }
 
   /*Method to remove Digits/char*/
   def removeDigit(s: String): Char = {
@@ -68,13 +43,14 @@ object CalculatorApp {
     (sym, Args.head, Args(1))
   }
 
-  def perform(op: Char, arg1: Double, arg2: Double): Unit = op match {
-    case '+' => evalAdd(arg1, arg2)
-    case '-' => evalSub(arg1, arg2)
-    case '*' => evalMultiple(arg1, arg2)
-    case '/' => evalDivide(arg1, arg2)
-    case _   => System.exit(0)
-  }
+  def perform(op: Char, arg1: Double, arg2: Double, c: Calculator): Unit =
+    op match {
+      case '+' => c.evalAdd(arg1, arg2)
+      case '-' => c.evalSub(arg1, arg2)
+      case '*' => c.evalMultiple(arg1, arg2)
+      case '/' => c.evalDivide(arg1, arg2)
+      case _   => System.exit(0)
+    }
 
   def isContinue(in: String): Boolean = {
     in.toUpperCase() match {
@@ -88,11 +64,14 @@ object CalculatorApp {
     println("************* Welcome to calculator! Type help *************")
     getChoice
     var isRunning = true
+    val console = new LiveConsole()
+    val cal = new Calculator(console)
+
     while (isRunning) {
       println("Enter the operation")
       val line = readLine()
       val (op, arg1, arg2) = operand(line)
-      perform(op, arg1, arg2)
+      perform(op, arg1, arg2, cal)
       println("Do you want to continue with Calculator: Y or N")
       val in = readLine()
       isRunning = isContinue(in)
