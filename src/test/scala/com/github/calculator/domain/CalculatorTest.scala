@@ -2,8 +2,15 @@ package com.github.calculator.domain
 
 import com.github.calculator.console.{Console, LiveConsole}
 import org.scalatest.{FunSuite, Matchers}
+import org.mockito.{MockitoSugar, ArgumentMatchersSugar}
 
-class CalculatorTest extends FunSuite with Matchers {
+import org.mockito.ArgumentMatchers.anyString
+
+class CalculatorTest
+    extends FunSuite
+    with Matchers
+    with MockitoSugar
+    with ArgumentMatchersSugar {
   val con = new LiveConsole()
   val cal = new Calculator(con)
 
@@ -17,6 +24,18 @@ class CalculatorTest extends FunSuite with Matchers {
     calc.evalAdd(5, 5)
     testcon.printedLines.head shouldBe "Result is 10.00"
   }
+
+  test("mock add method prints correct") {
+
+    val aMock = mock[User]
+
+    when(aMock.getName).thenCallRealMethod()
+
+    when(aMock.getUser) thenReturn ("Paell")
+
+    aMock.getName shouldBe "Pavel"
+
+  }
 }
 
 class TestConsole extends Console {
@@ -25,5 +44,14 @@ class TestConsole extends Console {
   override def printLine(line: String): Unit =
     printedLines = line :: printedLines
 
-  override def readLine(): String = ???
+  override def read(): String = ???
+}
+
+trait User {
+  def getName: String = {
+    println("Pavell")
+    "Pavel"
+  }
+
+  def getUser: String
 }

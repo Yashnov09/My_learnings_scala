@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e45b2d86-bb35-48cf-857d-75b4c888d364" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/console/Console.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/domain/Calculator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Director.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Film.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalcTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/domain/CalculatorTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Color.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Shape.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/CalculatorApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/person.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/person.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/calculator/console/Console.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/calculator/console/Console.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Director.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Director.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Film.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Film.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/person.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/github/essentialScala/Counter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/CalculatorAppTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/com/github/calculator/domain/CalculatorTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/github/calculator/domain/CalculatorTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +61,9 @@
       <recent name="org.scalatest.FunSuite" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.CalculatorTest.add method prints fine">
-    <configuration name="CalculatorApp" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.calculator.CalculatorApp" />
-      <module name="My_learnings_scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="alien" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.essentialScala.alien" />
+  <component name="RunManager" selected="Application.Draw">
+    <configuration name="Counter" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.essentialScala.Counter" />
       <module name="My_learnings_scala" />
       <extension name="coverage">
         <pattern>
@@ -87,7 +75,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.Square of a number works correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="Draw" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.essentialScala.Draw" />
+      <module name="My_learnings_scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.essentialScala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorAppTest.Getchoice method returns proper message" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="My_learnings_scala" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Test name" />
@@ -100,8 +101,8 @@
       <option name="shortenClasspath" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="com.github.calculator.CalcTest" />
-      <option name="testName" value="Square of a number works correctly" />
+      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="testName" value="Getchoice method returns proper message" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -110,10 +111,10 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="CalculatorAppTest.Perform logic calls correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="My_learnings_scala" />
       <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
+      <option name="testKind" value="Test name" />
       <option name="envs">
         <map />
       </option>
@@ -123,7 +124,8 @@
       <option name="shortenClasspath" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="com.github.calculator.domain.CalculatorTest" />
+      <option name="testClassPath" value="com.github.calculator.CalculatorAppTest" />
+      <option name="testName" value="Perform logic calls correctly" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -132,7 +134,7 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.add method prints fine" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="CalculatorTest.mock add method prints correct" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="My_learnings_scala" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Test name" />
@@ -146,7 +148,7 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="com.github.calculator.domain.CalculatorTest" />
-      <option name="testName" value="add method prints fine" />
+      <option name="testName" value="mock add method prints correct" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -178,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.CalculatorTest.add method prints fine" />
-        <item itemvalue="ScalaTest.CalculatorTest" />
-        <item itemvalue="Application.CalculatorApp" />
-        <item itemvalue="ScalaTest.CalcTest.Square of a number works correctly" />
-        <item itemvalue="Application.alien" />
+        <item itemvalue="Application.Draw" />
+        <item itemvalue="Application.Counter" />
+        <item itemvalue="ScalaTest.CalculatorTest.mock add method prints correct" />
+        <item itemvalue="ScalaTest.CalculatorAppTest.Perform logic calls correctly" />
+        <item itemvalue="ScalaTest.CalculatorAppTest.Getchoice method returns proper message" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +202,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="578" y="298" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596026134966">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="298" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1596026134966" />
     <state x="653" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1594912049929">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -212,26 +218,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="613" y="237" key="Github.UntrackedFilesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590048893189" />
-    <state width="1638" height="267" key="GridCell.Tab.0.bottom" timestamp="1595167032198">
+    <state width="1126" height="393" key="GridCell.Tab.0.bottom" timestamp="1596984367790">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1595167032198" />
-    <state width="1638" height="441" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113660" />
-    <state width="1638" height="267" key="GridCell.Tab.0.center" timestamp="1595167032195">
+    <state width="1126" height="393" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596984367790" />
+    <state width="819" height="216" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595529419695" />
+    <state width="1126" height="393" key="GridCell.Tab.0.center" timestamp="1596984367787">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="267" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1595167032195" />
-    <state width="1638" height="441" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113656" />
-    <state width="1638" height="267" key="GridCell.Tab.0.left" timestamp="1595167032194">
+    <state width="1126" height="393" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596984367787" />
+    <state width="819" height="216" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595529419693" />
+    <state width="1126" height="393" key="GridCell.Tab.0.left" timestamp="1596984367786">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="267" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1595167032194" />
-    <state width="1638" height="441" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113651" />
-    <state width="1638" height="267" key="GridCell.Tab.0.right" timestamp="1595167032196">
+    <state width="1126" height="393" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596984367786" />
+    <state width="819" height="216" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595529419692" />
+    <state width="1126" height="393" key="GridCell.Tab.0.right" timestamp="1596984367789">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="267" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1595167032196" />
-    <state width="1638" height="441" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1594620113658" />
+    <state width="1126" height="393" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596984367789" />
+    <state width="819" height="216" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595529419694" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1590331209568">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -256,6 +262,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="328" y="106" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1595167020667" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1596119176130">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1596119176130" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590330190432">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

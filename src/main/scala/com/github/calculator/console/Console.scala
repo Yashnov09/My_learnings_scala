@@ -1,15 +1,15 @@
 package com.github.calculator.console
+import scala.io.StdIn.readLine
 
 trait Console {
 
   def printLine(line: String): Unit
-
-  def readLine(): String
+  def read(): String
 
 }
 
 class LiveConsole extends Console {
-  override def printLine(line: String): Unit = println(line)
 
-  override def readLine(): String = scala.io.StdIn.readLine()
+  override def printLine(line: String): Unit = println(line)
+  override def read(): String = readLine()
 }

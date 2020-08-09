@@ -2,9 +2,15 @@ package com.github.calculator
 
 import org.scalactic.Equality
 import org.scalatest.{FunSuite, Matchers}
+import org.mockito.{MockitoSugar, ArgumentMatchersSugar}
+import org.mockito.stubbing.{CallsRealMethods}
 import com.github.calculator.domain.Calculator
 import com.github.calculator.console.LiveConsole
-class CalculatorAppTest extends FunSuite with Matchers {
+class CalculatorAppTest
+    extends FunSuite
+    with Matchers
+    with MockitoSugar
+    with ArgumentMatchersSugar {
   val con = new LiveConsole()
   val cal = new Calculator(con)
 
@@ -43,6 +49,22 @@ class CalculatorAppTest extends FunSuite with Matchers {
   test("Operand function gives correct results ") {
     val result: (Char, Double, Double) = ('+', 20.0, 10.0)
     CalculatorApp.operand("20.0+10.0") shouldBe result
+  }
+
+  test("Entry to the app and User is presented help pop-up") {
+    val mockHelp = mock[LiveConsole]
+
+    doReturn("help").when(mockHelp).read()
+
+    mockHelp.read() shouldBe "help"
+  }
+
+  test("Getchoice method returns proper message") {
+
+    val mockGetchoice = MockitoSugar.mock[CalculatorApp](CallsRealMethods)
+
+    mockGetchoice.checkLine("help") shouldBe Right()
+
   }
 
 }

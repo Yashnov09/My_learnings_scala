@@ -2,14 +2,23 @@ package com.github.calculator
 import scala.io.StdIn.readLine
 import com.github.calculator.domain.Calculator
 import com.github.calculator.console.LiveConsole
+import com.github.calculator.CalculatorApp.checkLine
 
-object CalculatorApp {
+trait CalculatorApp {
 
   /*Method to remove Digits/char*/
   def removeDigit(s: String): Char = {
     if (s.contains('.')) {
       s.filter(c => (!c.isDigit && c != '.')).head
     } else s.filter(c => !c.isDigit).head
+  }
+
+  def checkLine(line: String): Either[String, Unit] = {
+    line match {
+      case "help" => Right(())
+      case _      => Left("Invalid input, please type help !!")
+    }
+
   }
 
   def getChoice: Unit = {
@@ -26,14 +35,9 @@ object CalculatorApp {
     }
 
   }
+}
 
-  def checkLine(line: String): Either[String, Unit] = {
-    line match {
-      case "help" => Right(())
-      case _      => Left("Invalid input, please type help !!")
-    }
-
-  }
+object CalculatorApp extends LiveConsole with CalculatorApp {
 
   def operand(line: String): (Char, Double, Double) = {
     val nextStep = line.replaceAll(" +", "")
@@ -69,11 +73,11 @@ object CalculatorApp {
 
     while (isRunning) {
       println("Enter the operation")
-      val line = readLine()
+      val line = console.read()
       val (op, arg1, arg2) = operand(line)
       perform(op, arg1, arg2, cal)
       println("Do you want to continue with Calculator: Y or N")
-      val in = readLine()
+      val in = console.read()
       isRunning = isContinue(in)
     }
     println("Exiting the calculator App !!")
